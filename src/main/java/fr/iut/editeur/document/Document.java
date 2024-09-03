@@ -30,4 +30,14 @@ public class Document {
         String partieDroite = texte.substring(fin + 1);
         texte = partieGauche + remplacement + partieDroite;
     }
+
+    public void majuscules(int debut, int fin) {
+        //TO-DO!
+        String partieGauche = texte.substring(0, debut);
+        String partieMillieu = texte.substring(debut, fin);
+        String partieDroite = texte.substring(fin + 1);
+
+        texte = partieGauche + partieMillieu.toUpperCase() + partieDroite;
+    }
+
 }
