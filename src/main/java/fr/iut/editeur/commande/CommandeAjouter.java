@@ -2,6 +2,8 @@ package fr.iut.editeur.commande;
 
 import fr.iut.editeur.document.Document;
 
+import static java.lang.Integer.parseInt;
+
 public class CommandeAjouter extends CommandeDocument {
 
 
