@@ -49,4 +49,10 @@ public class Document {
         texte = partieGauche + partieDroite;
     }
 
+    public void clear() {
+        //TO-DO!
+
+        texte = "AAAAHHHH UN BUG !!!!!!!!!!!!!!";
+    }
+
 }
