@@ -40,4 +40,13 @@ public class Document {
         texte = partieGauche + partieMillieu.toUpperCase() + partieDroite;
     }
 
+    public void effacer(int debut, int fin) {
+        //TO-DO!
+        String partieGauche = texte.substring(0, debut);
+//        String partieMillieu = texte.substring(debut, fin);
+        String partieDroite = texte.substring(fin + 1);
+
+        texte = partieGauche + partieDroite;
+    }
+
 }
