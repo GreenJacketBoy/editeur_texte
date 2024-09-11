@@ -25,11 +25,24 @@ public class Document {
         return this.texte;
     }
 
+    /**
+     * remplace de debut jusqu'à fin par remplacement
+     * @param debut
+     * @param fin
+     * @param remplacement
+     */
+
     public void remplacer(int debut, int fin, String remplacement) {
         String partieGauche = texte.substring(0, debut);
         String partieDroite = texte.substring(fin + 1);
         texte = partieGauche + remplacement + partieDroite;
     }
+
+    /**
+     * met en majuscule le contenu de debut jusqu'à fin
+     * @param debut
+     * @param fin
+     */
 
     public void majuscules(int debut, int fin) {
         //TO-DO!
@@ -39,6 +52,12 @@ public class Document {
 
         texte = partieGauche + partieMillieu.toUpperCase() + partieDroite;
     }
+
+    /**
+     * efface le contenu de la pharse hde debut jusqu'à fin
+     * @param debut
+     * @param fin
+     */
 
     public void effacer(int debut, int fin) {
         //TO-DO!
